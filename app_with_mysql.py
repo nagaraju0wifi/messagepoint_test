@@ -16,7 +16,7 @@ def dbConnection():
     #db = pymysql.connect("127.0.0.1","root","Bablu@143341","templates" )
     db_host="127.0.0.1"
     db_user="root"
-    db_password="Bablu@143341"
+    db_password="MYSQL_PASSWORD"
     db_name="templates"
     db = pymysql.connect(db_host,db_user,db_password,db_name )
     #db = pymysql.connect(db='templates', user='root', passwd='root', host='127.0.0.1', port=3306)
