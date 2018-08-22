@@ -1,0 +1,10 @@
+# Execution step
+
+1. enter virtualenv flask command 
+2. execute the application file python app_with_*.py
+3. The server will start on 127.0.01:5000
+4. curl -i http://127.0.0.1:5000/templtes  -> get the list of templates
+5. curl -i -X POST http://127.0.0.1:5000/templtes   -> It will Create a new templte and disaply the details of the new templte
+                                                        (Eg: {"Template_Id":1,"Template_Name":"Template_1"})
+5. curl -i -X POST http://127.0.0.1:5000/templtes/template_id/render -> render and display the content 
+   (Eg: curl -i -X POST http://127.0.0.1:5000/templates/1/render)
